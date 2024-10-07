@@ -7,10 +7,11 @@ function AboutUs() {
       {/* <h1 className="about-us-heading">About Us</h1> */}
       <p className="about-us-description">Welcome to Paradise Nursery, where green meets serenity!</p>
       <p className="about-us-content">
-        At Paradise Nursery, we are passionate about bringing nature closer to you. Our mission is to provide a wide range of 
-        high-quality plants that not only enhance the beauty of your surroundings but also contribute to a healthier and 
-        more sustainable lifestyle. From air-purifying plants to aromatic fragrant ones, we have something for every 
-        plant enthusiast.
+      Eden's Garden is a vibrant online plant store that brings the beauty of nature right to your doorstep. With a wide selection of indoor and outdoor plants, from lush tropicals to hardy succulents, the store caters to both novice gardeners and seasoned plant enthusiasts.
+
+The website features an easy-to-navigate layout, complete with detailed care guides and tips for each plant, ensuring customers feel confident in their choices. The aesthetic is serene and inviting, showcasing stunning plant photography that captures the essence of each variety.
+
+Eden's Garden also emphasizes sustainability, offering eco-friendly pots and organic soil options. Regular blog posts and a community forum provide a space for plant lovers to share experiences, tips, and inspiration. With fast shipping and a satisfaction guarantee, Eden's Garden strives to make every plant purchase a joyful and successful experience. Whether you're looking to green your home or gift a friend, Eden's Garden has everything you need to cultivate your own slice of paradise.
       </p>
       {/* <p className="plant_logo_left"><img src="https://p1.hiclipart.com/preview/922/979/640/green-leaf-logo-emoji-seedling-emoticon-sticker-plant-plant-stem-flower-png-clipart-thumbnail.jpg" height='50px' width='50px' alt="" /></p> */}
       <p className="about-us-content">
