@@ -4,7 +4,14 @@ import CartItem from './CartItem';
 function ProductList() {
     const [showCart, setShowCart] = useState(false); 
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
-
+    const [addedToCart, setAddedToCart] = useState({});
+    const handleAddToCart = (product) => {
+        dispatch(addItem(product));
+        setAddedToCart((prevState) => ({
+           ...prevState,
+           [product.name]: true, // Set the product name as key and value as true to indicate it's added to cart
+         }));
+      };
     const plantsArray = [
         {
             category: "Air Purifying Plants",
@@ -268,9 +275,21 @@ const handlePlantsClick = (e) => {
         </div>
         {!showCart? (
         <div className="product-grid">
-
-
-        </div>
+             {plantsArray.map((category, index) => (
+          <div key={index}>
+            <h2>{category.category}</h2>
+            {category.plants.map((plant, plantIndex) => (
+              <div key={plantIndex} className="plant-item">
+                <img src={plant.image} alt={plant.name} />
+                <h3>{plant.name}</h3>
+                <p>{plant.description}</p>
+                <p>Cost: {plant.cost}</p>
+                <button>Add to Cart</button>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
  ) :  (
     <CartItem onContinueShopping={handleContinueShopping}/>
 )}
